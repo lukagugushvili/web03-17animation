@@ -1,0 +1,102 @@
+ body {
+    background: #ade5f5;
+    overflow-x: hidden;
+ }
+
+.animation-container {
+    max-height: 100vh;
+}
+
+.title {
+    position: absolute;
+    left: 45%;
+    animation: myanimation linear 0.4s 0.18s 1 both;
+}
+
+@keyframes myanimation {
+    0% {
+        top: 0px;
+        color: #ade5f5;
+    }
+    50% {
+        left: 32%;
+        font-size: 100px;
+    }
+    100% {
+        top: 30%;
+        transform: rotateX(360deg);
+    }
+}
+
+
+.title-2 {
+    position: absolute;
+    top: 39%;
+    animation-name: myanimation2;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+    animation-delay: 0.18s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+
+@keyframes myanimation2{
+    0% {
+        color: #ade5f5;
+    }
+    50% {
+        color: #ade5f5;
+    }
+    100% {
+        left: 668px;
+        transform: rotateY(360deg);
+    }
+}
+
+.title-3 {
+    position: absolute;
+    right: calc(100% - 813px);
+    animation-name: myanimation3;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+    animation-delay: 0.22s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes myanimation3{
+    0% {
+        bottom: 0px;
+        color: #ade5f5;
+    }
+    70% {
+        color: #ade5f5;
+    }
+    100% {
+        bottom: 46%;
+        transform: rotateX(360deg);
+    }
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.icon {
+    position: absolute;
+    right: calc(100% - 790px);
+    animation: icon linear 0.6s 0.9s infinite both;
+    transform: rotate(360deg);
+}
+
+@keyframes icon{
+    0% {
+        bottom: 39%;
+        transform: rotate(0);
+    }
+    100% {
+        bottom: 39%;
+    }
+}
